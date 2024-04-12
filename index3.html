@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotCopy Embed</title>
+    <style>
+        /* CSS for styling the text */
+        #headline {
+            font-family: Martian Mono, monospace;
+            font-size: 36px;
+            font-weight: bold;
+            color: black;
+            cursor: pointer; /* Add cursor pointer to make it interactive */
+            transition: color 0.3s ease; /* Add transition for color change */
+            text-align: center; /* Align headline in center */
+        }
+
+        /* CSS for hover effect */
+        #headline:hover {
+            color: navy;
+        }
+
+        #subheadline {
+            font-family: Martian Mono, monospace;
+            font-size: 24px;
+            color: navy;
+            text-align: center; /* Align sub-headline in center */
+        }
+
+        /* CSS for styling the airplane image */
+        .cloud {
+            position: absolute;
+            top: 0px;
+            right: -500px;
+            opacity: .8;
+            animation: cloud 10s linear 0s infinite reverse;
+            z-index: 99;
+        }
+
+        @keyframes cloud {
+            from {right:-500px;}
+            to {right: 102%;}
+        }
+
+        .light {
+            width: 10px;
+            height: 10px;
+            background: red;
+            border-radius: 50%;
+            bottom: 295px;
+            position: absolute;
+            z-index: 10;
+            left: 20px;
+            animation: light 800ms ease-in-out 0s infinite alternate;
+        }
+
+        @keyframes light {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+    </style>
+</head>
+<body style="background: skyblue;">
+
+<!-- Text outside of the chatbot interface -->
+<div>
+    <h1 id="headline">Not just a chatbot,</h1>
+    <h2 id="subheadline">But your Pal.</h2>
+    <!-- Airplane image -->
+    <div class="cloud cloud1">
+        <div class="light"></div>
+        <img id="airplane" src="https://images.vexels.com/media/users/3/145795/isolated/preview/05cd33059a006bf49006097af4ccba98-plane-in-flight-by-vexels.png" alt="Airplane">
+    </div>
+</div>
+
+<!-- Chatbot interface code -->
+<script type="text/javascript"
+    id="botcopy-embedder-d7lcfheammjct"
+    class="botcopy-embedder-d7lcfheammjct" 
+    data-botId="6618c4f86c53d500089b353b"
+>
+    var s = document.createElement('script'); 
+    s.type = 'text/javascript'; s.async = true; 
+    s.src = 'https://widget.botcopy.com/js/injection.js'; 
+    document.getElementById('botcopy-embedder-d7lcfheammjct').appendChild(s);
+</script>
+
+</body>
+</html>
